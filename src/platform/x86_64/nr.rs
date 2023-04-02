@@ -26,3 +26,5 @@ pub const SYS_KILL: usize = 23;
 pub const SYS_SIGACTION: usize = 24;
 pub const SYS_RT_SIGRETURN: usize = 25;
 pub const SYS_GETPID: usize = 26;
+pub const SYS_DUP: usize=28;
+pub const SYS_DUP2: usize=29;
