@@ -8,6 +8,18 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
+/// The macro to invoke a syscall.
+/// 
+/// # Examples
+/// 
+/// The following code will print `Hello, world!` to the screen with black background and white foreground.
+/// ```
+/// syscall!(SYS_PUTSTRING, "Hello, world!\n", 0x00ffffff, 0x00000000);
+/// ```
+/// 
+/// # Note
+/// 
+/// This macro is not meant to be used directly, but rather as a dependency for other crates.
 #[macro_export]
 macro_rules! syscall {
     ($nr:ident)
