@@ -45,3 +45,5 @@ pub const SYS_GETSOCKNAME: usize = 41;
 pub const SYS_GETPEERNAME: usize = 42;
 
 pub const SYS_GETTIMEOFDAY: usize = 43;
+
+pub const SYS_FSTAT: usize = 47;
