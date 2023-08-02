@@ -43,7 +43,9 @@ pub const SYS_ACCEPT: usize = 40;
 
 pub const SYS_GETSOCKNAME: usize = 41;
 pub const SYS_GETPEERNAME: usize = 42;
-
 pub const SYS_GETTIMEOFDAY: usize = 43;
+pub const SYS_MMAP: usize = 44;
+pub const SYS_MUNMAP: usize = 45;
 
+pub const SYS_MPROTECT: usize = 46;
 pub const SYS_FSTAT: usize = 47;
