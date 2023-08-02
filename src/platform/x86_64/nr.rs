@@ -49,3 +49,6 @@ pub const SYS_MUNMAP: usize = 45;
 
 pub const SYS_MPROTECT: usize = 46;
 pub const SYS_FSTAT: usize = 47;
+pub const SYS_GETCWD: usize = 48;
+pub const SYS_GETPPID: usize = 49;
+pub const SYS_GETPGID: usize = 50;
