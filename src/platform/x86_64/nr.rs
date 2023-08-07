@@ -54,3 +54,4 @@ pub const SYS_GETPPID: usize = 49;
 pub const SYS_GETPGID: usize = 50;
 
 pub const SYS_FCNTL: usize = 51;
+pub const SYS_FTRUNCATE: usize = 52;
