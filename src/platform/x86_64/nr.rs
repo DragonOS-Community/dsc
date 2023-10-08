@@ -55,3 +55,5 @@ pub const SYS_GETPGID: usize = 50;
 
 pub const SYS_FCNTL: usize = 51;
 pub const SYS_FTRUNCATE: usize = 52;
+
+pub const SYS_MKNOD: usize = 53;
