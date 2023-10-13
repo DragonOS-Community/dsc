@@ -1,4 +1,5 @@
-{    "arch": "x86_64",
+{
+    "arch": "x86_64",
     "code-model": "kernel",
     "cpu": "x86-64",
     "os": "dragonos",
@@ -16,16 +17,15 @@
     "position-independent-executables": true,
     "relro-level": "full",
     "stack-probes": {
-      "kind": "inline-or-call",
-      "min-llvm-version-for-inline": [
-        16,
-        0,
-        0
-      ]
+        "kind": "inline-or-call",
+        "min-llvm-version-for-inline": [
+            16,
+            0,
+            0
+        ]
     },
     "static-position-independent-executables": true,
     "supported-sanitizers": [
-      "kcfi"
-    ],
-    "target-pointer-width": "64"
+        "kcfi"
+    ]
 }

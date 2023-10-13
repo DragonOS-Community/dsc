@@ -20,7 +20,8 @@ pub const SYS_NANOSLEEP: usize = 18;
 pub const SYS_CLOCK: usize = 19;
 pub const SYS_PIPE: usize = 20;
 
-pub const SYS_MSTAT: usize = 21;
+// 21号系统调用现已弃用
+// pub const SYS_MSTAT: usize = 21;
 pub const SYS_UNLINK_AT: usize = 22;
 pub const SYS_KILL: usize = 23;
 pub const SYS_SIGACTION: usize = 24;
