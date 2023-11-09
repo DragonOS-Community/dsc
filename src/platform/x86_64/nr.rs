@@ -2,18 +2,22 @@ pub const SYS_READ: usize = 0;
 pub const SYS_WRITE: usize = 1;
 pub const SYS_OPEN: usize = 2;
 pub const SYS_CLOSE: usize = 3;
-
+pub const SYS_STAT: usize = 4;
 pub const SYS_FSTAT: usize = 5;
+
+pub const SYS_POLL: usize = 7;
 pub const SYS_LSEEK: usize = 8;
 pub const SYS_MMAP: usize = 9;
 pub const SYS_MPROTECT: usize = 10;
 pub const SYS_MUNMAP: usize = 11;
 pub const SYS_BRK: usize = 12;
 pub const SYS_SIGACTION: usize = 13;
-
+pub const SYS_RT_SIGPROCMASK: usize = 14;
 pub const SYS_RT_SIGRETURN: usize = 15;
-
+pub const SYS_IOCTL: usize = 16;
 pub const SYS_WRITEV: usize = 20;
+
+pub const SYS_MADVISE: usize = 28;
 
 pub const SYS_DUP: usize = 32;
 pub const SYS_DUP2: usize = 33;
@@ -34,7 +38,7 @@ pub const SYS_BIND: usize = 49;
 pub const SYS_LISTEN: usize = 50;
 pub const SYS_GETSOCKNAME: usize = 51;
 pub const SYS_GETPEERNAME: usize = 52;
-
+pub const SYS_SOCKET_PAIR: usize = 53;
 pub const SYS_SETSOCKOPT: usize = 54;
 pub const SYS_GETSOCKOPT: usize = 55;
 pub const SYS_CLONE: usize = 56;
@@ -58,22 +62,27 @@ pub const SYS_MKDIR: usize = 83;
 
 pub const SYS_GETTIMEOFDAY: usize = 96;
 
-pub const SYS_REBOOT: usize = 169;
-
 pub const SYS_GETPPID: usize = 110;
 pub const SYS_GETPGID: usize = 121;
-
+pub const SYS_SIGALTSTACK: usize = 131;
 pub const SYS_MKNOD: usize = 133;
 
 pub const SYS_ARCH_PRCTL: usize = 158;
 
+pub const SYS_REBOOT: usize = 169;
+
+pub const SYS_GETTID: usize = 186;
+
 pub const SYS_FUTEX: usize = 202;
 
+pub const SYS_GET_DENTS_64: usize = 217;
 pub const SYS_SET_TID_ADDR: usize = 218;
 
 pub const SYS_UNLINK_AT: usize = 263;
 
 pub const SYS_PIPE: usize = 293;
+
+pub const SYS_GET_RANDOM: usize = 318;
 
 // 与linux不一致的调用，在linux基础上累加
 // 独立系统调用号大于100000
