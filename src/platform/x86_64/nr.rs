@@ -91,6 +91,7 @@ pub const SYS_GET_DENTS_64: usize = 217;
 pub const SYS_SET_TID_ADDR: usize = 218;
 
 pub const SYS_UNLINK_AT: usize = 263;
+pub const SYS_READLINK_AT: usize = 267;
 pub const SYS_ACCEPT4: usize = 288;
 pub const SYS_PIPE: usize = 293;
 
