@@ -60,7 +60,10 @@ pub const SYS_CHDIR: usize = 80;
 
 pub const SYS_MKDIR: usize = 83;
 
+pub const SYS_READLINK: usize = 89;
+
 pub const SYS_GETTIMEOFDAY: usize = 96;
+pub const SYS_GETRUSAGE: usize = 98;
 
 pub const SYS_GETUID: usize = 102;
 pub const SYS_SYSLOG: usize = 103;
