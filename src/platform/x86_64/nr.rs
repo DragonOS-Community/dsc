@@ -62,6 +62,15 @@ pub const SYS_MKDIR: usize = 83;
 
 pub const SYS_GETTIMEOFDAY: usize = 96;
 
+pub const SYS_GETUID: usize = 102;
+pub const SYS_SYSLOG: usize = 103;
+pub const SYS_GETGID: usize = 104;
+pub const SYS_SETUID: usize = 105;
+
+pub const SYS_SETGID: usize = 106;
+pub const SYS_GETEUID: usize = 107;
+pub const SYS_GETEGID: usize = 108;
+
 pub const SYS_GETPPID: usize = 110;
 pub const SYS_GETPGID: usize = 121;
 pub const SYS_SIGALTSTACK: usize = 131;
