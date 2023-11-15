@@ -5,17 +5,22 @@ pub const SYS_CLOSE: usize = 3;
 pub const SYS_STAT: usize = 4;
 pub const SYS_FSTAT: usize = 5;
 
+pub const SYS_LSTAT: usize = 6;
 pub const SYS_POLL: usize = 7;
 pub const SYS_LSEEK: usize = 8;
 pub const SYS_MMAP: usize = 9;
 pub const SYS_MPROTECT: usize = 10;
+
 pub const SYS_MUNMAP: usize = 11;
 pub const SYS_BRK: usize = 12;
 pub const SYS_SIGACTION: usize = 13;
 pub const SYS_RT_SIGPROCMASK: usize = 14;
 pub const SYS_RT_SIGRETURN: usize = 15;
+
 pub const SYS_IOCTL: usize = 16;
 pub const SYS_WRITEV: usize = 20;
+pub const SYS_ACCESS: usize = 21;
+pub const SYS_PIPE: usize = 22;
 
 pub const SYS_MADVISE: usize = 28;
 
@@ -60,11 +65,16 @@ pub const SYS_CHDIR: usize = 80;
 
 pub const SYS_MKDIR: usize = 83;
 
+pub const SYS_UNLINK: usize = 87;
 pub const SYS_READLINK: usize = 89;
+pub const SYS_CHMOD: usize = 90;
+
+pub const SYS_FCHMOD: usize = 91;
+pub const SYS_UMASK: usize = 95;
 
 pub const SYS_GETTIMEOFDAY: usize = 96;
 pub const SYS_GETRUSAGE: usize = 98;
-
+pub const SYS_SYSINFO: usize = 99;
 pub const SYS_GETUID: usize = 102;
 pub const SYS_SYSLOG: usize = 103;
 pub const SYS_GETGID: usize = 104;
@@ -90,12 +100,18 @@ pub const SYS_FUTEX: usize = 202;
 pub const SYS_GET_DENTS_64: usize = 217;
 pub const SYS_SET_TID_ADDR: usize = 218;
 
+pub const SYS_CLOCK_GETTIME: usize = 228;
+pub const SYS_OPENAT: usize = 257;
 pub const SYS_UNLINK_AT: usize = 263;
 pub const SYS_READLINK_AT: usize = 267;
+pub const SYS_FCHMODAT: usize = 268;
+pub const SYS_FACCESSAT: usize = 269;
 pub const SYS_ACCEPT4: usize = 288;
-pub const SYS_PIPE: usize = 293;
-
+pub const SYS_PIPE2: usize = 293;
+pub const SYS_PRLIMIT64: usize = 302;
 pub const SYS_GET_RANDOM: usize = 318;
+
+pub const SYS_FACCESSAT2: usize = 439;
 
 // 与linux不一致的调用，在linux基础上累加
 // 独立系统调用号大于100000
