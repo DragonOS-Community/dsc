@@ -68,6 +68,9 @@ pub use platform::*;
 
 pub(crate) mod macros;
 
-#[cfg(all(any(target_os = "dragonos"), target_arch = "x86_64"))]
+#[cfg(all(
+    any(target_os = "dragonos", target_os = "linux"),
+    target_arch = "x86_64"
+))]
 #[path = "platform/x86_64/mod.rs"]
 pub mod platform;
